@@ -543,6 +543,20 @@ class Library(object):
         # So valueCount[5] is the number of times 5 has been seen in the data.
         valueCounts = Counter()
         for read in self.bam.fetch():
+            print("this is the read")
+            print(read)
+            print("these is the read group")
+            print(read.get_tag('RG'))
+            print("these are all the read groups")
+            print(self.readgroups)
+            print("other flags")
+            print(read.is_reverse)
+            print(not read.mate_is_reverse)
+            print(read.is_unmapped)
+            print(read.mate_is_unmapped)
+            print(not self.is_primary(read))
+            print(read.template_length <= 0)
+            
             if skip_counter < skip:
                 skip_counter += 1
                 continue
