@@ -19,7 +19,6 @@ setup(
     license='MIT License',
     url='https://github.com/hall-lab/svtyper',
     setup_requires=['pytest-runner'],
-    tests_require=['pytest==4.6.4'],
     install_requires=[
         'pysam>=0.15.0',
         'numpy',
