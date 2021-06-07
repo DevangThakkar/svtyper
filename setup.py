@@ -17,8 +17,7 @@ setup(
     author=__author__,
     author_email='colbychiang@wustl.edu',
     license='MIT License',
-    url='https://github.com/hall-lab/svtyper',
-    setup_requires=['pytest-runner'],
+    url='https://github.com/devangthakkar/svtyper',
     install_requires=[
         'pysam>=0.15.0',
         'numpy',
