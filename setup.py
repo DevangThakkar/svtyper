@@ -1,8 +1,5 @@
 from setuptools import setup, find_packages
 
-with open('README.md') as f:
-    readme = f.read()
-
 with open('svtyper/version.py') as f:
     exec(f.read())
 
@@ -10,7 +7,6 @@ setup(
     name='svtyper',
     version=__version__,
     description='Bayesian genotyper for structural variants',
-    long_description=readme,
     long_description_content_type='text/markdown',
     author=__author__,
     author_email='colbychiang@wustl.edu',
@@ -42,7 +38,7 @@ setup(
         'Intended Audience :: Science/Research',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
     ],
 )
 
