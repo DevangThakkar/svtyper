@@ -549,13 +549,6 @@ class Library(object):
             print(read.get_tag('RG'))
             print("these are all the read groups")
             print(self.readgroups)
-            print("other flags")
-            print(read.is_reverse)
-            print(not read.mate_is_reverse)
-            print(read.is_unmapped)
-            print(read.mate_is_unmapped)
-            print(not self.is_primary(read))
-            print(read.template_length <= 0)
             
             if skip_counter < skip:
                 skip_counter += 1
@@ -569,6 +562,7 @@ class Library(object):
                 or read.get_tag('RG') not in self.readgroups):
                 continue
             else:
+                print("went in, yay!")
                 valueCounts[read.template_length] += 1
                 counter += 1
             if counter == self.num_samp:
